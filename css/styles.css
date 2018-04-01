@@ -1,0 +1,732 @@
+/*******************
+- Table of Contents:
+-- 1. Tag Styles
+-- 2. Margin & Padding
+-- 3. Bootstrap: Buttons
+-- 4. Bootstrap: Checkbox & Radios
+-- 5. Bootstrap: Tabs
+-- 6. Bootstrap: Forms
+-- 7. Bootstrap: Dropdowns
+-- 8. Search Bar
+-- 9. Sidebar
+-- 10. Product Sort
+-- 11. Product Listing
+-- 12. Product Information
+-- 13. Modals
+-- 14. Log In Modal
+-- 15. Account Modal
+-- 16. Shopping Cart & Dropdown Shopping Cart
+-- 17. Checkout
+-- 18. Panel
+-- 19. Footer
+ */
+
+/************
+1. Tag Styles
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    color: #343a40;
+}
+
+/******************
+2. Margin & Padding
+ */
+
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+/********************
+3. Bootstrap: Buttons
+ */
+
+.btn-outline-light:hover {
+    color: #343a40;
+}
+
+.btn-outline-light.focus,
+.btn-outline-light:focus {
+    box-shadow: none;
+}
+
+.btn-outline-light:not([disabled]):not(.disabled).active,
+.btn-outline-light:not([disabled]):not(.disabled):active,
+.show > .btn-outline-light.dropdown-toggle {
+    box-shadow: none;
+}
+
+.btn-outline-dark:not([disabled]):not(.disabled).active,
+.btn-outline-dark:not([disabled]):not(.disabled):active,
+.show > .btn-outline-dark.dropdown-toggle {
+    box-shadow: none;
+    background: #343a40;
+    color: #ffffff;
+}
+
+.btn-outline-dark.focus,
+.btn-outline-dark:focus {
+    box-shadow: none;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn-dark.focus,
+.btn-dark:focus {
+    box-shadow: none !important;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+    box-shadow: none !important;
+}
+
+.btn-danger.focus,
+.btn-danger:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-danger.focus,
+.btn-outline-danger:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-danger:not([disabled]):not(.disabled).active,
+.btn-outline-danger:not([disabled]):not(.disabled):active,
+.show>.btn-outline-danger.dropdown-toggle {
+    color: #ffffff !important;
+}
+
+.btn-outline-success:not([disabled]):not(.disabled).active,
+.btn-outline-success:not([disabled]):not(.disabled):active,
+.show>.btn-outline-success.dropdown-toggle {
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary.focus,
+.btn-outline-secondary:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary:not([disabled]):not(.disabled).active,
+.btn-outline-secondary:not([disabled]):not(.disabled):active,
+.show>.btn-outline-secondary.dropdown-toggle {
+    color: #ffffff !important;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+.btn.disabled {
+    opacity: 1 !important;
+    background: #343a40;
+    color: #ffffff;
+}
+
+/******************************
+4. Bootstrap: Checkbox & Radios
+ */
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #343a40;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+    background-color: #dddfe2;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #343a40;
+}
+
+/*****************
+5. Bootstrap: Tabs
+ */
+
+.nav-pills .nav-link.active:not(#logoutTab), .nav-pills .show>.nav-link {
+    background-color: #343a40;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #dc3545;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #343a40;
+}
+
+.nav-link:hover:not(.active):not(#paymentTab):not(#reviewAndPlaceOrderTab) {
+    color: #343a40 !important;
+}
+
+/******************
+6. Bootstrap: Forms
+ */
+
+.custom-select:focus {
+    border-color: initial;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #343a40;
+    box-shadow: none;
+}
+
+.custom-select.is-invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.was-validated .form-control:invalid:focus {
+    box-shadow: none !important;
+}
+
+/**********************
+7. Bootstrap: Dropdowns
+ */
+
+.dropdown-menu {
+    padding: .5rem 0 .5rem 0;
+}
+
+.dropdown-item:active {
+    background: #f8f9fa;
+    color: inherit;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 0, 0, .075);
+}
+
+/************
+8. Search Bar
+ */
+
+.search {
+    border: 1px solid #ffffff
+}
+
+.search:focus {
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+/*********
+9. Sidebar
+ */
+
+.sidebar-header {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
+    background: #e7e8ea;
+}
+
+/***************
+10. Product Sort
+ */
+
+.sort-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sort-btn {
+    margin-right: -15px;
+    padding: 7px;
+}
+
+.results {
+    padding-top: 0.5rem;
+}
+
+/******************
+11. Product Listing
+ */
+
+.product-group {
+    padding: 0 15px;
+}
+
+.thumbnail img {
+    height: 320px;
+    width: 100%;
+}
+
+.card-container {
+    min-width: 268.98px;
+}
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 1rem 1.25rem 1rem 1.25rem !important;
+}
+
+.view-product-btn {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-top: 1px solid rgb(223, 223, 223) !important;
+}
+
+.view-product-btn:hover {
+    background: rgba(0, 0, 0, .075) !important;
+}
+
+.view-product-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.add-to-cart-btn {
+    background-color: #28a745 !important;
+    border-top: 1px solid rgb(223, 223, 223) !important;
+    cursor: pointer;
+}
+
+.out-of-stock-btn {
+    background-color: #dc3545 !important;
+    border-top: 1px solid rgb(223, 223, 223) !important;
+}
+
+/**********************
+12. Product Information
+ */
+
+.tab-inactive a {
+    color: #495057;
+}
+
+.nav-tab-btn {
+    color: #22252a !important;
+}
+
+.product-options {
+    margin-left: -30px !important;
+}
+
+.product-dropdown-btn {
+    margin-left: -15px !important;
+    margin-top: -6px;
+}
+
+.product-tab {
+    margin-left: -15px;
+}
+
+.product-thumbnail img {
+    height: 380px;
+    width: 100%;
+}
+
+/*********
+13. Modals
+ */
+
+.modal-header-container {
+    padding: 0;
+}
+
+/***************
+14. Log In Modal
+ */
+
+.login-container {
+    padding-left: 12rem !important;
+    padding-right: 12rem !important;
+}
+
+.login-tab {
+    color: #495057 !important;
+}
+
+.login-btn {
+    width: 30% !important;
+}
+
+.register-btn {
+    width: 30% !important;
+}
+
+.invalid-login {
+    color: #dc3545;
+    font-size: 80%;
+}
+
+/****************
+15. Account Modal
+ */
+
+.order-table {
+    margin-bottom: 0;
+    font-size: .89rem;
+    color: #343a40;
+}
+
+.order-row {
+    border: none !important;
+    vertical-align: middle !important;
+}
+
+.order-quantity {
+    min-width: 40px;
+}
+
+.view-order {
+    font-weight: 500;
+    text-decoration: none !important;
+    font-size: .79rem;
+}
+
+.history-total {
+    font-weight: 500;
+}
+
+.history-list {
+    padding-left: 18px;
+}
+
+.logout-spinner {
+    margin-top: 5px;
+}
+
+/*****************************************
+16. Shopping Cart & Dropdown Shopping Cart
+ */
+
+.shopping-cart {
+    font-size: 18px !important;
+}
+
+.badge {
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.delete-button {
+    color: #343a40;
+    font-size: 17px;
+    float: none;
+}
+
+.shopping-cart-table {
+    margin-bottom: 0;
+    font-size: .75rem;
+    color: #343a40;
+}
+
+.shopping-cart-row {
+    border: none !important;
+}
+
+.dropdown-header {
+    color: #343a40;
+    padding: .5rem 1.5rem .5rem 0.75rem;
+}
+
+.dropdown-divider-margin-a {
+    margin: .5rem 0 0 0;
+}
+
+.dropdown-divider-margin-b {
+    margin: 0 0 .5rem 0;
+}
+
+.header-rhs {
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.header-sm {
+    font-size: .775rem;
+}
+
+.checkout-btn {
+    margin-right: 15px;
+}
+
+.product-added {
+    background: #28a745;
+    border-color: #28a745;
+}
+
+.empty-cart {
+    font-size: .875rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-end {
+    text-align: end;
+}
+
+/***********
+17. Checkout
+ */
+
+.checkout-steps {
+    background: #e7e8ea;
+    border: 1px solid #dddfe2;
+}
+
+.checkout-steps > div > ul {
+    font-size: 15px !important;
+}
+
+.active-step {
+    color: #343a40 !important;
+}
+
+.active-step > div {
+    background: #343a40;
+    color: #ffffff;
+}
+
+.inactive-step {
+    color: #868e96 !important;
+}
+
+.inactive-step > div {
+    border-color: #868e96;
+    background: #e7e8ea;
+    color: #868e96;
+}
+
+.inactive-step:hover:not(.disabled) {
+    color: #343a40 !important;
+}
+
+.inactive-step:hover:not(.disabled) > div {
+    border-color: #343a40;
+    background: #343a40;
+    color: #ffffff;
+}
+
+.checkout-icon-border {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #343a40;
+    padding: 0.25em 0.76em;
+}
+
+.checkout-icon-border > i {
+    color: #343a40;
+    font-size: 1.3em;
+}
+
+.checkout-table {
+    margin-bottom: 0;
+    font-size: .85rem;
+    color: #343a40;
+}
+
+.checkout-row {
+    border: none !important;
+}
+
+.checkout-quantity {
+    min-width: 40px;
+}
+
+.checkout-quantity-btn {
+    padding: .1rem .5rem;
+    font-size: .675rem;
+}
+
+.checkout-summary > h6 {
+    font-size: 0.9rem !important;
+}
+
+.checkout-summary > h5 {
+    font-size: 1rem !important;
+}
+
+.checkout-summary > h6.normal {
+    font-weight: 400;
+}
+
+.checkout-payment-container {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+}
+
+.checkout-payment-img {
+    max-width: 25%;
+    height: auto;
+}
+
+.checkout-review-container {
+    padding-left: 7rem; !important;
+    padding-right: 7rem !important;
+}
+
+.checkout-action {
+    text-align: center;
+}
+
+.success-container {
+    padding-left: 5rem; !important;
+    padding-right: 5rem; !important;
+}
+
+.success-bold {
+    font-weight: 500;
+}
+
+/********
+18. Panel
+ */
+
+.panel-steps {
+    background: #e7e8ea;
+    border: 1px solid #dddfe2;
+}
+
+.panel-steps > div > ul {
+    font-size: 15px !important;
+}
+
+.active-step {
+    color: #343a40 !important;
+}
+
+.active-step > div {
+    background: #343a40;
+    color: #ffffff;
+}
+
+.panel-icon-border {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #343a40;
+    padding: 0.25em 0.76em;
+}
+
+.panel-icon-border > i {
+    color: #343a40;
+    font-size: 1.3em;
+}
+
+.text-area-title {
+    line-height: 48px !important;
+}
+
+.admin-search {
+    border: 1px solid #343a40;
+}
+
+.admin-search:focus {
+    border-color: #343a40;;
+    box-shadow: none;
+}
+
+.recently-added-title {
+    line-height: 31px;
+}
+
+.order-title {
+    line-height: 31px;
+}
+
+.order-status {
+    font-weight: 500;
+}
+
+.order-status > select {
+    height: 29px !important;
+}
+
+.edit-product-btn {
+    margin-right: -15px;
+}
+
+.cms-pagination {
+    margin-bottom: 0 !important;
+    color: #343a40;
+}
+
+.pagination li.active a {
+    background-color: #343a40 !important;
+    border-color: #343a40!important;
+    color: #ffffff;
+}
+
+.pagination li.active a:hover {
+    color: #ffffff;
+}
+
+.no-resize {
+    resize: none;
+}
+
+/*********
+19. Footer
+ */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #343a40;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Absolute Center Spinner */
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+/* Transparent Overlay */
+.loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+}
