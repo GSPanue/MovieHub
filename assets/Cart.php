@@ -32,7 +32,7 @@ function retrieveCart() {
     ]) : $cart = $db->fetchCart(['userID' => $id], false);
 
     /**
-     * The cart
+     * The cart is returned.
      */
     return json_encode($cart['items']);
 }
