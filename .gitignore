@@ -1,0 +1,8 @@
+# IntelliJ Project Files
+.idea
+*.iml
+out
+gen
+
+# Mac OS
+.DS_Store
